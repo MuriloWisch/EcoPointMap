@@ -41,7 +41,7 @@ Este projeto tem como objetivo geral a criação de uma aplicação web de fáci
 
 # Hospedagem
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-1-e1-proj-web-t6-v2-pmv-ads-2025-1-e1-proj-ecopointmap/codigo-fonte/src/Home/index.html
 
 # Código-Fonte
 
