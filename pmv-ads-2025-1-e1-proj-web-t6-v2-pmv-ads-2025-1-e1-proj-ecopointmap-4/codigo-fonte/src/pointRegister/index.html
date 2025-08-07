@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="author" content="Bruna">
+  <meta name="description" content="Site para cadastro e localização de pontos de reciclagem">
+  <meta name="keywords" content="ecologia, meio ambiente, sustentabilidade, reciclagem, reutilização, reaproveitamento">
+  <title>EcoPointMap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="../Home/index.html">EcoPointMap</a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="../Home/index.html">Inicio</a></li>
+        <li><a href="../educationSession/index.html">Sessão educativa</a></li>
+        <li><a href="../favorites/index.html">Favoritos</a></li>
+        <li id="menu-cadastro"><a href="../pointRegister/index.html">Cadastrar ponto</a></li>
+        <li id="menu-entrar"><a href="../login/index.html">Entrar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="servicos-home corpo">
+    <h1 class="titulo">Cadastro de ponto de reciclagem</h1>
+
+    <div class="form-container">
+      <form id="form" name="form">
+        <div class="form-item">
+          <label for="name">Nome do ponto *</label>
+
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Escreva o nome do ponto"
+            minlength="5"
+          />
+        </div>
+
+        <div class="form-item">
+          <label for="address">Endereço *</label>
+
+          <input
+            id="address"
+            name="address"
+            type="text"
+            placeholder="Escreva o endereço do ponto"
+            minlength="10"
+          />
+        </div>
+
+        <div class="form-item">
+          <label for="type">Tipo de material *</label>
+
+          <select id="type" name="type">
+            <option value="">Selecione o tipo do material</option>
+
+            <option value="paper">Papel</option>
+
+            <option value="plastic">Plástico</option>
+
+            <option value="glass">Vidro</option>
+
+            <option value="metal">Metal</option>
+
+            <option value="electronic">Eletrônico</option>
+
+            <option value="battery">Bateria</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="mapEmbed">Link do Mapa (Embed)</label>
+          <input
+            id="mapEmbed"
+            name="mapEmbed"
+            type="text"
+            placeholder="Cole o código iframe do Google Maps ou apenas o link src"
+          />
+          <small class="hint">Cole todo o iframe ou apenas o link dentro do src="..."</small>
+
+          <div id="mapPreview"></div>
+        </div>
+
+        <div class="form-item">
+          <label for="openingHours">Horário de funcionamento</label>
+          <input
+            id="openingHours"
+            name="openingHours"
+            type="text"
+            placeholder="Ex: Seg-Sex 08:00 às 18:00"
+            minlength="5"
+          />
+        </div>
+
+        <div class="form-item">
+          <label for="phone">Contato (telefone)</label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder="Ex: (99) 99999-9999"
+          />
+        </div>
+
+        <div class="form-item">
+          <label for="imageUrl">Link da imagem</label>
+          <input
+            id="imageUrl"
+            name="imageUrl"
+            type="text"
+            placeholder="Cole o link da imagem"
+          />
+        </div>
+
+        <button type="submit">Cadastrar ponto</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    <p>Copyright &#169 2025 EcoPointMap | Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="../components/menu/menu.js"></script>
+  <script src="../pointRegister/script.js"></script>
+</body>
+
+</html>
